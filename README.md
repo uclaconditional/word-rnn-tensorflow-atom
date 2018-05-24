@@ -26,7 +26,7 @@ to search with. For example:
 python sample.py --pick 2 --width 4
 ```
 # Training / Sampling on a custom dataset
-*NEW & IMPORTANT INFO*
+*NEW & IMPORTANT INFO:*  
 You can use any plain text file as input. To train on a custom dataset, create an `input.txt` file in a new folder within `data`, and create an empty folder with the same name within `save`.
 
 Then start train from the top level directory using `python train.py --data_dir=./data/YOUR_FOLDER_HERE/ --save_dir=./save/YOUR_FOLDER_HERE`
@@ -144,7 +144,7 @@ I know take this sour place,
 they know allegiance Had made you guilty.
 You do her bear comfort him between him or our noble bosom he did Bolingbroke's
 ```
-*NOTES*
+*NOTES:*
 - Avoid using beam search (or `--pick 2`) in conjunction with `--prime` when generating multiple samples with `--count` (or `-c`). This will likely give you multiple identical samples or repeating text.
 
 - If you notice the outputted text is starting to repeat itself anyway, it may be helpful to remove said repeated phrases from the training data and re-train.
